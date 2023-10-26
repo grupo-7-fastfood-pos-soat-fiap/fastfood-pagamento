@@ -40,7 +40,7 @@ namespace FastFoodFIAP.Infra.Data.Mappings
 
             builder.HasIndex(c => c.SituacaoId);
 
-            builder.HasOne(c => c.SitucaoPedidoNavegation)
+            builder.HasOne(c => c.SituacaoPedidoNavegation)
                .WithMany()
                .HasForeignKey(p => p.SituacaoId);
 
@@ -53,7 +53,7 @@ namespace FastFoodFIAP.Infra.Data.Mappings
                 .WithMany()
                 .HasForeignKey(p => p.FuncionarioId);
 
-            builder.Navigation(e => e.SitucaoPedidoNavegation).AutoInclude();
+            builder.Navigation(e => e.SituacaoPedidoNavegation).AutoInclude();
             builder.Navigation(e => e.FuncionarioNavegation).AutoInclude();
         }
     }
