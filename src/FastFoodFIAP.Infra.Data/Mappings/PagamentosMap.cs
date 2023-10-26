@@ -38,11 +38,11 @@ namespace FastFoodFIAP.Infra.Data.Mappings
 
             builder.HasIndex(c => c.SituacaoId);
 
-            builder.HasOne(c => c.SitucaoPagamentoNavegation)
+            builder.HasOne(c => c.SituacaoPagamentoNavegation)
                .WithMany()
                .HasForeignKey(p => p.SituacaoId);
             
-            builder.Navigation(e => e.SitucaoPagamentoNavegation).AutoInclude();
+            builder.Navigation(e => e.SituacaoPagamentoNavegation).AutoInclude();
         }
     }
 }

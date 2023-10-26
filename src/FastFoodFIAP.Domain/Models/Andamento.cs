@@ -14,7 +14,7 @@ namespace FastFoodFIAP.Domain.Models
 
         public virtual Pedido? PedidoNavegation { get; private set; }
         public virtual Funcionario? FuncionarioNavegation { get; private set; }
-        public virtual SituacaoPedido? SitucaoPedidoNavegation { get; private set; }
+        public virtual SituacaoPedido? SituacaoPedidoNavegation { get; private set; }
 
         private Andamento()
         {

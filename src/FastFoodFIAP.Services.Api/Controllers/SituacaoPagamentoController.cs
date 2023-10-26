@@ -10,11 +10,11 @@ namespace FastFoodFIAP.Services.Api.Controllers
     [Route("api/situacao-pagamento")]
     [Produces("application/json")]
     [Consumes("application/json")]
-    public class SitucaoPagamentoController: ApiController
+    public class SituacaoPagamentoController: ApiController
     {
         private readonly ISituacaoPagamentoApp _situacaoApp;        
 
-        public SitucaoPagamentoController(ISituacaoPagamentoApp situacaoApp)
+        public SituacaoPagamentoController(ISituacaoPagamentoApp situacaoApp)
         {
             _situacaoApp = situacaoApp;            
         }
