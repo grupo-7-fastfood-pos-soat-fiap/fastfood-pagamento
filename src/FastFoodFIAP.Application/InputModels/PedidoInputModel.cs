@@ -2,7 +2,12 @@
 {
     public class PedidoInputModel
     {
-        public Guid? ClienteId {get; set;}
-        public List<PedidoComboInputModel>? Combos {get; set;}
+        public Guid? ClienteId { get; private set; }
+        public List<PedidoComboInputModel>? Combos { get; set; }
+
+        public void SetCliente(Guid cliente_id)
+        {
+            ClienteId = cliente_id;
+        }
     }
 }

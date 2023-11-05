@@ -4,8 +4,10 @@ using FastFoodFIAP.Application.Services;
 using FastFoodFIAP.Application.ViewModels;
 using FastFoodFIAP.Domain.Models;
 using FastFoodFIAP.Domain.Models.PedidoAggregate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
+using System.Security.Claims;
 
 namespace FastFoodFIAP.Services.Api.Controllers
 {
@@ -93,6 +95,7 @@ namespace FastFoodFIAP.Services.Api.Controllers
             
         }
 
+        [Authorize]
         [HttpPost]
         [SwaggerOperation(
         Summary = "Cria um novo pedido.",
@@ -107,6 +110,15 @@ namespace FastFoodFIAP.Services.Api.Controllers
             {
                 if (!ModelState.IsValid)
                     return CustomResponse(ModelState);
+
+                var claimsIdentity = User.Identity as ClaimsIdentity;
+                var cpf = claimsIdentity?.Claims.FirstOrDefault(x => x.Type == "Cpf");
+                var clienteId = claimsIdentity?.Claims.FirstOrDefault(x => x.Type == "ClienteId");
+
+                if (cpf == null || clienteId == null)
+                    return StatusCode(StatusCodes.Status401Unauthorized);                
+
+                pedidoInputModel.SetCliente(Guid.Parse(clienteId.Value));
 
                 var result = await _pedidoApp.Add(pedidoInputModel);
                 if (result.Id != null)
