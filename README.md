@@ -72,8 +72,6 @@ A imagem a seguir documenta o sistema utilizando a linguagem ubíqua, dos seguin
     - Swagger UI
 - PostgreSQL 
 - Docker
-- Kubernets
-  -  Minikube 
 
 ## Arquitetura e Padrões
 
