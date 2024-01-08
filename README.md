@@ -1,4 +1,4 @@
-# [FIAP - Pos Tech] Fast Food
+# [FIAP - Pos Tech] Fast Food - Pagamento API
 
 FIAP Pos Tech - SOFTWARE ARCHITECTURE
 
@@ -16,30 +16,13 @@ SOAP2 - Grupo 7
 
 ## O projeto
 
-O projeto consiste em um sistema de autoatendimento de fast food, que é composto por uma série de dispositivos e interfaces que permitem aos clientes selecionar e fazer pedidos sem precisar interagir com um atendente. 
+O projeto consiste em um microservico responsável por gerar a cobrança de um pedido gerado anteriormente, parte de um sitema de autoatendimento de fastfood.
 
 No projeto atual temos as seguintes funcionalidades:
-- Cadastro do Cliente
-- Identificação do Cliente via CPF
-- Criar, editar e remover de produto
-- Buscar produtos por categoria
-- Checkout do pedido com retorno dos dados de acompanhamento e pagamento
+- Criar um pagamento
 - Webhook para recebimento da confirmação do pagamento
 - Consultar situação do pagamento
-- Atualizar situação dos pedidos
-- Listar os pedidos ativos
 
-## Documentações
-
-A imagem a seguir documenta o sistema utilizando a linguagem ubíqua, dos seguintes fluxos:
-- Realização do pedido e pagamento
-- Preparação e entrega do pedido
-
-![Projeto](./docs/DDD.png)
-
-
-- Miro do DDD: https://miro.com/app/board/uXjVMI-wOLc=/?share_link_id=8789531868
-- Diagrama de Classes (necessita ser aberto no [Draw.io](https://www.drawio.com/)): https://github.com/belloniz/group-7/blob/main/docs/ProjetoGrupo7_v2.drawio
 
 ## Pré-requisitos
 
