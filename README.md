@@ -16,13 +16,15 @@ SOAP2 - Grupo 7
 
 ## O projeto
 
-O projeto consiste em um microservico responsável por gerar a cobrança de um pedido gerado anteriormente, parte de um sitema de autoatendimento de fastfood.
+O projeto consiste em um microservico responsável por gerar a cobrança de um pedido gerado anteriormente, parte de um sistema de autoatendimento de fastfood.
 
 No projeto atual temos as seguintes funcionalidades:
 - Criar um pagamento
 - Webhook para recebimento da confirmação do pagamento
 - Consultar situação do pagamento
 
+## Banco de dados
+Como o serviço de pagamento envolve transações financeiras, é crucial garantir a integridade e consistência dos dados, o sistema utiliza o banco de dados PostgreSQL.
 
 ## Pré-requisitos
 
