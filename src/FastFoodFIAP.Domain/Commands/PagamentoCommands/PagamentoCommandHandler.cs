@@ -1,8 +1,6 @@
-﻿using FastFoodFIAP.Domain.Events.AndamentoEvents;
-using FastFoodFIAP.Domain.Events.PagamentoEvents;
+﻿using FastFoodFIAP.Domain.Events.PagamentoEvents;
 using FastFoodFIAP.Domain.Interfaces;
 using FastFoodFIAP.Domain.Models;
-using FastFoodFIAP.Domain.Models.PedidoAggregate;
 using FluentValidation.Results;
 using GenericPack.Messaging;
 using MediatR;

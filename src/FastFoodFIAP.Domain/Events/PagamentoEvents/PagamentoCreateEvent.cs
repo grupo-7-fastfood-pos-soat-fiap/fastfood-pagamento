@@ -7,12 +7,12 @@ namespace FastFoodFIAP.Domain.Events.PagamentoEvents
     public class PagamentoCreateEvent : Event
     {
         public Guid Id { get; protected set; }
-        public Pedido Pedido { get; protected set;}
+        public Guid PedidoId { get; protected set;}
 
-        public PagamentoCreateEvent(Pedido pedido)
+        public PagamentoCreateEvent(PedidoId pedidoId)
         {
             Id = Guid.NewGuid();
-            Pedido = pedido;
+            PedidoId = pedidoId;
         }
     }
 }

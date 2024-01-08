@@ -19,4 +19,3 @@ namespace FastFoodFIAP.Domain.Commands.PagamentoCommands{
         }
     }
 }
-
