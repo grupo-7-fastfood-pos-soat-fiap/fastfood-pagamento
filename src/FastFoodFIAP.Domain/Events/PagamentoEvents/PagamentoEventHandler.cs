@@ -14,21 +14,19 @@ namespace FastFoodFIAP.Domain.Events.PagamentoEvents
     {
 
         private readonly IPagamentoRepository _repository;
-        private readonly IPedidoRepository _repositoryPedido;
         private readonly IGatewayPagamento _gateway;
 
-        public PagamentoEventHandler(IPedidoRepository repositoryPedido, IPagamentoRepository repository, IGatewayPagamento gateway)
+        public PagamentoEventHandler(IPagamentoRepository repository, IGatewayPagamento gateway)
         {
-            _repositoryPedido = repositoryPedido;
             _repository = repository;
             _gateway = gateway;
         }
 
         public async Task Handle(PagamentoCreateEvent notification, CancellationToken cancellationToken)
         {
-            var qrCode = await _gateway.SolicitarQrCodeAsync(notification.Pedido);
+            var qrCode = await _gateway.SolicitarQrCodeAsync(notification.PedidoId, notification.Valor);
 
-            var pagamento = new Pagamento(Guid.NewGuid(), qrCode, notification.Pedido.TotalPedido(), notification.Pedido.Id, (int)Models.Enums.SituacaoPagamento.Pendente);
+            var pagamento = new Pagamento(Guid.NewGuid(), qrCode, notification.Valor, notification.PedidoId, (int)Models.Enums.SituacaoPagamento.Pendente);
             
             _repository.Add(pagamento);            
 

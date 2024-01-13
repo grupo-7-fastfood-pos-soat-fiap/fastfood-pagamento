@@ -1,4 +1,3 @@
-using FastFoodFIAP.Domain.Models.PedidoAggregate;
 using GenericPack.Domain;
 
 namespace FastFoodFIAP.Domain.Models
@@ -10,7 +9,6 @@ namespace FastFoodFIAP.Domain.Models
         public Guid PedidoId { get; private set; }
         public int SituacaoId { get; private set; }
 
-        public virtual Pedido? PedidoNavegation { get; private set; }
         public virtual SituacaoPagamento? SituacaoPagamentoNavegation { get; private set; }
 
         private Pagamento() { }

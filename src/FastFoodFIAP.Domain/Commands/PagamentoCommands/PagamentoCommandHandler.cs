@@ -29,9 +29,9 @@ namespace FastFoodFIAP.Domain.Commands.PagamentoCommands
 
             var pagamento = new Pagamento(request.Id, pagamentoExiste.QrCode, pagamentoExiste.Valor, pagamentoExiste.PedidoId, request.SituacaoId);
 
-            int situacao = request.SituacaoId == (int)Models.Enums.SituacaoPagamento.Aprovado ? (int)Models.Enums.SituacaoPedido.Recebido : (int)Models.Enums.SituacaoPedido.Cancelado;
+           // int situacao = request.SituacaoId == (int)Models.Enums.SituacaoPagamento.Aprovado ? (int)Models.Enums.SituacaoPedido.Recebido : (int)Models.Enums.SituacaoPedido.Cancelado;
 
-            pagamento.AddDomainEvent(new AndamentoCreateEvent(pagamentoExiste.PedidoId, null, situacao, true));
+            //pagamento.AddDomainEvent(new AndamentoCreateEvent(pagamentoExiste.PedidoId, null, situacao, true));
 
             _repository.Update(pagamento);
 

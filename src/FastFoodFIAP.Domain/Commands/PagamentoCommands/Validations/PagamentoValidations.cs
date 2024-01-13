@@ -1,5 +1,4 @@
-﻿using FastFoodFIAP.Domain.CustomValidations;
-using FluentValidation;
+﻿using FluentValidation;
 
 namespace FastFoodFIAP.Domain.Commands.PagamentoCommands.Validations
 {

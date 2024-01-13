@@ -1,7 +1,6 @@
 
 using System.ComponentModel.DataAnnotations;
 using FastFoodFIAP.Domain.Models;
-using FastFoodFIAP.Domain.Models.ProdutoAggregate;
 using FastFoodFIAP.Infra.Data.Mappings;
 using GenericPack.Data;
 using GenericPack.Domain;
@@ -16,7 +15,6 @@ namespace FastFoodFIAP.Infra.Data.Context
         private readonly IMediatorHandler _mediatorHandler;
         public DbSet<SituacaoPagamento>? SituacoesPagamento { get; set; }
         public DbSet<Pagamento>? Pagamentos { get; set; }
-        
 
         public AppDbContext(DbContextOptions<AppDbContext> options, IMediatorHandler mediatorHandler) :base(options)
         {

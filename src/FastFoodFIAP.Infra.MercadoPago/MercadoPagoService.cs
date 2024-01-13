@@ -8,7 +8,6 @@ using static System.Net.Mime.MediaTypeNames;
 using FastFoodFIAP.Infra.MercadoPago.Models;
 using Microsoft.AspNetCore.Mvc;
 using MediatR;
-using FastFoodFIAP.Domain.Models.PedidoAggregate;
 
 namespace FastFoodFIAP.Infra.MercadoPago
 {
@@ -24,32 +23,15 @@ namespace FastFoodFIAP.Infra.MercadoPago
             _httpClient = httpClient;
         }
 
-
-        public async Task<string> SolicitarQrCodeAsync(Pedido pedido)
+        public async Task<string> SolicitarQrCodeAsync(Guid pedidoId, decimal valor)
         {
             Requisicao requisicao =  new Requisicao();
 
-            requisicao.external_reference= pedido.Id.ToString();
+            requisicao.external_reference= pedidoId.ToString();
             requisicao.title = "Pedido FastFood FIAP";
             requisicao.notification_url = "https://www.fastfoodfiap.com.br/api/webhook";
             requisicao.description = "Autoatendimento";
-            requisicao.total_amount = 2;
-            
-            foreach(var combo in pedido.Combos)
-                foreach(var produto in combo.Produtos)
-                {
-                    Item item = new Item();
-                    item.sku_number = produto.ProdutoId.ToString();
-                    item.category = "";
-                    item.title = "";
-                    item.description = "";
-                    item.unit_price = produto.ValorUnitario;
-                    item.quantity = produto.Quantidade * combo.Quantidade;
-                    item.unit_measure = "unit";
-                    item.total_amount = produto.Quantidade;
-
-                    requisicao.items.Add(item);
-                }
+            requisicao.total_amount = valor;
             
             requisicao.cash_out.amount = 0;
 
