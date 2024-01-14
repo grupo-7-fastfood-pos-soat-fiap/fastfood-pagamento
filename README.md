@@ -20,7 +20,6 @@ O projeto consiste em um microservico responsável por gerar a cobrança de um p
 
 No projeto atual temos as seguintes funcionalidades:
 - Criar um pagamento
-- Webhook para recebimento da confirmação do pagamento
 - Consultar situação do pagamento
 
 ## Banco de dados
