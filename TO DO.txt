@@ -1,7 +1,0 @@
-TO DO List
-[ ] API para criar um pagamento e retornar o QR CODE
-- Adicionar amount no NewPagamentoInputModel
-
-[ ] BDD Test Infra
-[ ] Atingir 80% de cobertura no sonar
-[ ] Renomear artigos/pastas de FastFoodFIAP para FastFoodPagamento
