@@ -38,18 +38,9 @@ namespace FastFoodFIAP.Domain.Commands.PagamentoCommands
             GC.SuppressFinalize(this);
         }
 
-        private void Dispose(bool disposing)
+        protected virtual void Dispose(bool disposing)
         {
-            if (!this.disposed)
-            {
-                if (disposing)
-                {
-                    _repository.Dispose();
-                }
-                disposed = true;
-            }
+            _repository.Dispose();
         }
-
-        private bool disposed = false;
     }
 }
