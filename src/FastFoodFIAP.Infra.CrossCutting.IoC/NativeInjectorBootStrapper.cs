@@ -51,7 +51,8 @@ namespace FastFoodFIAP.Infra.CrossCutting.IoC
             services.AddAutoMapper(typeof(DomainToViewModelMappingProfile), typeof(InputModelToDomainMappingProfile));
 
             // Domain - Commands
-            services.AddScoped<IRequestHandler<PagamentoUpdateCommand, CommandResult>, PagamentoCommandHandler>();
+            services.AddScoped<IRequestHandler<PagamentoCreateCommand, CommandResult>, PagamentoCreateCommandHandler>();
+            services.AddScoped<IRequestHandler<PagamentoUpdateCommand, CommandResult>, PagamentoUpdateCommandHandler>();
             
 
             //Infra - Services
