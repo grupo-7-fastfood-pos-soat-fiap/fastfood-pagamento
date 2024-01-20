@@ -26,6 +26,8 @@ namespace FastFoodFIAP.Domain.Commands.PagamentoCommands
             var pagamento = new Pagamento(Guid.NewGuid(), qrCode, request.Valor, request.PedidoId, (int)Models.Enums.SituacaoPagamento.Pendente);
 
             _repository.Add(pagamento);
+
+            return await Commit(_repository.UnitOfWork);
         }
 
         public void Dispose()

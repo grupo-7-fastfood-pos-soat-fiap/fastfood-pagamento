@@ -13,7 +13,7 @@ namespace FastFoodFIAP.Application.AutoMapper
             AllowNullCollections = true;
 
             CreateMap<WebhookPagamentoInputModel, PagamentoUpdateCommand>();
-            CreateMap<NewPagamentoInputModel, NewPagamentoCommand>();
+            CreateMap<NewPagamentoInputModel, PagamentoCreateCommand>();
         }
     }
 }

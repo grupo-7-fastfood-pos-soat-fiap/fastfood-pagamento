@@ -10,7 +10,6 @@ using FastFoodFIAP.Infra.CrossCutting.Bus;
 using System.Reflection;
 using FastFoodFIAP.Infra.Data.Context;
 using FastFoodFIAP.Domain.Commands.PagamentoCommands;
-using FastFoodFIAP.Domain.Events.PagamentoEvents;
 using FastFoodFIAP.Domain.Interfaces.Services;
 using FastFoodFIAP.Infra.MercadoPago;
 using Microsoft.EntityFrameworkCore;

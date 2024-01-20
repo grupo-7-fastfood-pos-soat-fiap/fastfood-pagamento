@@ -5,11 +5,11 @@ using MediatR;
 
 namespace FastFoodFIAP.Domain.Commands.PagamentoCommands
 {
-    public class PagamentoCommandHandler : CommandHandler, IRequestHandler<PagamentoUpdateCommand, CommandResult>
+    public class PagamentoUpdateCommandHandler : CommandHandler, IRequestHandler<PagamentoUpdateCommand, CommandResult>
     {
         private readonly IPagamentoRepository _repository;
 
-        public PagamentoCommandHandler(IMediator mediator, IPagamentoRepository repository)
+        public PagamentoUpdateCommandHandler(IMediator mediator, IPagamentoRepository repository)
         {
             _repository = repository;
         }
