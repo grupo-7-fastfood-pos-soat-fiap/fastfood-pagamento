@@ -5,7 +5,7 @@ using MediatR;
 
 namespace FastFoodFIAP.Domain.Commands.PagamentoCommands
 {
-    public class PagamentoUpdateCommandHandler : CommandHandler, IRequestHandler<PagamentoUpdateCommand, CommandResult>
+    public class PagamentoUpdateCommandHandler : CommandHandler, IRequestHandler<PagamentoUpdateCommand, CommandResult>, IDisposable
     {
         private readonly IPagamentoRepository _repository;
 
@@ -34,7 +34,22 @@ namespace FastFoodFIAP.Domain.Commands.PagamentoCommands
 
         public void Dispose()
         {
-            _repository.Dispose();
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
+
+        private void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    _repository.Dispose();
+                }
+                disposed = true;
+            }
+        }
+
+        private bool disposed = false;
     }
 }
