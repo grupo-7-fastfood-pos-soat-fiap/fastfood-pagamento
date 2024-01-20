@@ -19,7 +19,7 @@ namespace FastFoodFIAP.Services.Api.Controllers
             _pagamentoApp = pagamentoApp;
         }
 
-        [HttpPost("/create")]
+        [HttpPost("/")]
         [SwaggerOperation(
         Summary = "Cria um pagamento e seu QR Code",
         Description = "Recebe um pedido ID e um valor e retorna um QR Code para pagamento"
@@ -34,7 +34,7 @@ namespace FastFoodFIAP.Services.Api.Controllers
                 if (!ModelState.IsValid)
                     return CustomResponse(ModelState);
 
-                return CustomNoContentResponse(await _pagamentoApp.Create(newPagamentoInputModel));
+                return CustomResponse(await _pagamentoApp.Create(newPagamentoInputModel));
             }
             catch (Exception e)
             {
