@@ -1,10 +1,10 @@
 ﻿namespace FastFoodFIAP.Domain.Commands.PagamentoCommands.Validations
 {
-    public class PagamentoValidationsUpdate : PagamentoValidations<PagamentoUpdateCommand>
+    public class PagamentoValidationsCreate : PagamentoValidations<PagamentoCreateCommand>
     {
-        public PagamentoValidationsUpdate(){        
-            ValidaId();    
-            ValidaSituacao();
+        public PagamentoValidationsCreate(){        
+            ValidaPedidoId();
+            ValidaAmount();
         }
     }
 }

@@ -17,5 +17,19 @@ namespace FastFoodFIAP.Domain.Commands.PagamentoCommands.Validations
                 .NotNull()
                 .WithMessage("O Id da situacao do pagamento não foi informado");
         }
+
+        protected void ValidaAmount()
+        {
+            RuleFor(c => c.Valor)
+                .NotNull()
+                .WithMessage("O valor do pagamento não foi informado");
+        }
+
+        protected void ValidaPedidoId()
+        {
+            RuleFor(c => c.PedidoId)
+                .NotNull()
+                .WithMessage("O ID do pedido não foi informado");
+        }
     }
 }

@@ -7,6 +7,9 @@ namespace FastFoodFIAP.Application.Interfaces
 {
     public interface IPagamentoApp: IDisposable
     {   
-        Task<CommandResult> Update(PagamentoInputModel model);
+
+        Task<CommandResult> Create(NewPagamentoInputModel model);
+
+        Task<CommandResult> Update(WebhookPagamentoInputModel model);
     }
 }
