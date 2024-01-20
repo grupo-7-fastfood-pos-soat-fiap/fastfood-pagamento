@@ -1,9 +1,7 @@
 using AutoMapper;
-using FastFoodFIAP.Application.InputModels;
 using FastFoodFIAP.Application.Interfaces;
 using FastFoodFIAP.Application.ViewModels;
 using FastFoodFIAP.Domain.Interfaces;
-using FluentValidation.Results;
 using GenericPack.Mediator;
 
 namespace FastFoodFIAP.Application.Services

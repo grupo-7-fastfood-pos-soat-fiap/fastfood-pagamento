@@ -23,9 +23,15 @@ namespace FastFoodFIAP.Application.Services
             _mapper = mapper;
         }
 
-        public async Task<CommandResult> Update(PagamentoInputModel model)
+        public async Task<CommandResult> Update(WebhookPagamentoInputModel model)
         {
             var command = _mapper.Map<PagamentoUpdateCommand>(model);
+            return await _mediator.SendCommand(command);
+        }
+
+        public async Task<CommandResult> Create(NewPagamentoInputModel model)
+        {
+            var command = _mapper.Map<PagamentoCreateCommand>(model);
             return await _mediator.SendCommand(command);
         }
 

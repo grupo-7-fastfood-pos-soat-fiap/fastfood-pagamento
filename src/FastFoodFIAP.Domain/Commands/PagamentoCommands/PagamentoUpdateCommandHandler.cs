@@ -1,17 +1,15 @@
-﻿using FastFoodFIAP.Domain.Events.PagamentoEvents;
-using FastFoodFIAP.Domain.Interfaces;
+﻿using FastFoodFIAP.Domain.Interfaces;
 using FastFoodFIAP.Domain.Models;
-using FluentValidation.Results;
 using GenericPack.Messaging;
 using MediatR;
 
 namespace FastFoodFIAP.Domain.Commands.PagamentoCommands
 {
-    public class PagamentoCommandHandler: CommandHandler, IRequestHandler<PagamentoUpdateCommand, CommandResult>
+    public class PagamentoUpdateCommandHandler : CommandHandler, IRequestHandler<PagamentoUpdateCommand, CommandResult>, IDisposable
     {
         private readonly IPagamentoRepository _repository;
 
-        public PagamentoCommandHandler(IMediator mediator, IPagamentoRepository repository)
+        public PagamentoUpdateCommandHandler(IMediator mediator, IPagamentoRepository repository)
         {
             _repository = repository;
         }
@@ -29,16 +27,18 @@ namespace FastFoodFIAP.Domain.Commands.PagamentoCommands
 
             var pagamento = new Pagamento(request.Id, pagamentoExiste.QrCode, pagamentoExiste.Valor, pagamentoExiste.PedidoId, request.SituacaoId);
 
-           // int situacao = request.SituacaoId == (int)Models.Enums.SituacaoPagamento.Aprovado ? (int)Models.Enums.SituacaoPedido.Recebido : (int)Models.Enums.SituacaoPedido.Cancelado;
-
-            //pagamento.AddDomainEvent(new AndamentoCreateEvent(pagamentoExiste.PedidoId, null, situacao, true));
-
             _repository.Update(pagamento);
 
             return await Commit(_repository.UnitOfWork);
         }
 
         public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
         {
             _repository.Dispose();
         }

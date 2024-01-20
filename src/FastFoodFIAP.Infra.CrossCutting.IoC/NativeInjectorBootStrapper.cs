@@ -10,7 +10,6 @@ using FastFoodFIAP.Infra.CrossCutting.Bus;
 using System.Reflection;
 using FastFoodFIAP.Infra.Data.Context;
 using FastFoodFIAP.Domain.Commands.PagamentoCommands;
-using FastFoodFIAP.Domain.Events.PagamentoEvents;
 using FastFoodFIAP.Domain.Interfaces.Services;
 using FastFoodFIAP.Infra.MercadoPago;
 using Microsoft.EntityFrameworkCore;
@@ -51,10 +50,9 @@ namespace FastFoodFIAP.Infra.CrossCutting.IoC
             services.AddAutoMapper(typeof(DomainToViewModelMappingProfile), typeof(InputModelToDomainMappingProfile));
 
             // Domain - Commands
-            services.AddScoped<IRequestHandler<PagamentoUpdateCommand, CommandResult>, PagamentoCommandHandler>();
-
-            // Domain - Events
-            services.AddScoped<INotificationHandler<PagamentoCreateEvent>, PagamentoEventHandler>();
+            services.AddScoped<IRequestHandler<PagamentoCreateCommand, CommandResult>, PagamentoCreateCommandHandler>();
+            services.AddScoped<IRequestHandler<PagamentoUpdateCommand, CommandResult>, PagamentoUpdateCommandHandler>();
+            
 
             //Infra - Services
             services.AddScoped<IGatewayPagamento, MercadoPagoService>();
