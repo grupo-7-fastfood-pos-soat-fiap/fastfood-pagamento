@@ -9,7 +9,7 @@ services:
     volumes:
       - ./var:/var/lib/postgresql/data
     environment:
-      POSTGRES_DB: fastfood
+      POSTGRES_DB: fastfood-pagamento
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
