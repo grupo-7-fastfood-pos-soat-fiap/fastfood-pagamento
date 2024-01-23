@@ -1,15 +1,15 @@
-version: "3.4"
-services:  
+version: "3.5"
+services:
   fastfoodpostgres-svc:
     container_name: postgres-fiap
     restart: always
     build:
       context: ./Docker
-      dockerfile: Dockerfile
+      dockerfile: db.Dockerfile
     volumes:
       - ./var:/var/lib/postgresql/data
     environment:
-      POSTGRES_DB: fastfood-pagamento
+      POSTGRES_DB: fastfood
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
