@@ -1,10 +1,8 @@
 ﻿using AutoMapper;
 using FastFoodFIAP.Application.InputModels;
 using FastFoodFIAP.Application.Interfaces;
-using FastFoodFIAP.Application.ViewModels;
 using FastFoodFIAP.Domain.Commands.PagamentoCommands;
 using FastFoodFIAP.Domain.Interfaces;
-using FluentValidation.Results;
 using GenericPack.Mediator;
 using GenericPack.Messaging;
 
