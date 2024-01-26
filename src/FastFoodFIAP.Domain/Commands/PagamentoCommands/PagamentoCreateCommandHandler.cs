@@ -11,7 +11,7 @@ namespace FastFoodFIAP.Domain.Commands.PagamentoCommands
         private readonly IPagamentoRepository _repository;
         private readonly IGatewayPagamento _gateway;
 
-        public PagamentoCreateCommandHandler(IMediator mediator, IPagamentoRepository repository, IGatewayPagamento gateway)
+        public PagamentoCreateCommandHandler(IPagamentoRepository repository, IGatewayPagamento gateway)
         {
             _repository = repository;
             _gateway = gateway;

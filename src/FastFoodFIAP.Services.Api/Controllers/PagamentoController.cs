@@ -42,7 +42,6 @@ namespace FastFoodFIAP.Services.Api.Controllers
             }
         }
 
-
         [HttpPost("/webhook")]
         [SwaggerOperation(
         Summary = "Recebe a confirmação de pagamento aprovado ou pagamento recusado",

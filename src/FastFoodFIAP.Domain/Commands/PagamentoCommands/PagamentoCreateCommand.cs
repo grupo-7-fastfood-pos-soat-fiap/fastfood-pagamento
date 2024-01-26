@@ -1,6 +1,5 @@
 namespace FastFoodFIAP.Domain.Commands.PagamentoCommands
 {
-
     public class PagamentoCreateCommand : PagamentoCommand
     {
         protected PagamentoCreateCommand() { }

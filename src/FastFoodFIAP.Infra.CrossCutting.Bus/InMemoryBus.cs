@@ -2,7 +2,6 @@ using FluentValidation.Results;
 using MediatR;
 using GenericPack.Mediator;
 using GenericPack.Messaging;
-using GenericPack.Domain;
 
 namespace FastFoodFIAP.Infra.CrossCutting.Bus
 {
