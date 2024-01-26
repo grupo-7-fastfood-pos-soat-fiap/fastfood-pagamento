@@ -1,13 +1,9 @@
 ﻿using FastFoodFIAP.Domain.Interfaces.Services;
-using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Text;
-using System.Net.Http.Json;
 using static System.Net.Mime.MediaTypeNames;
 using FastFoodFIAP.Infra.MercadoPago.Models;
-using Microsoft.AspNetCore.Mvc;
-using MediatR;
 
 namespace FastFoodFIAP.Infra.MercadoPago
 {
@@ -37,8 +33,7 @@ namespace FastFoodFIAP.Infra.MercadoPago
 
             QrData? qrData = await PostRequisicaoAsync(requisicao);
 
-            return qrData is null?"" : qrData.qr_data;
-
+            return qrData is null? "" : qrData.qr_data;
         }
 
         public async Task<QrData?> PostRequisicaoAsync(Requisicao requisicao)

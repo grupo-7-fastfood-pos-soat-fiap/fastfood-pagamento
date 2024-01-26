@@ -1,6 +1,4 @@
-using System.Data;
 using AutoMapper;
-using FastFoodFIAP.Application.InputModels;
 using FastFoodFIAP.Application.ViewModels;
 using FastFoodFIAP.Domain.Models;
 

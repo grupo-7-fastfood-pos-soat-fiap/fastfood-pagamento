@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FastFoodFIAP.Infra.MercadoPago.Models
+﻿namespace FastFoodFIAP.Infra.MercadoPago.Models
 {
     public class Requisicao
     {
@@ -13,7 +7,6 @@ namespace FastFoodFIAP.Infra.MercadoPago.Models
         public string notification_url { get; set; } = "";
         public decimal total_amount { get; set; }
         public string description { get; set; } = "";
-        public List<Item> items { get; set; } = new List<Item>();
         public CashOut cash_out { get; set; }= new CashOut();
     }
 }
