@@ -10,8 +10,8 @@ namespace FastFoodFIAP.Infra.MercadoPago
     public class MercadoPagoService : IGatewayPagamento, IDisposable
     {
         private readonly HttpClient _httpClient;
-        private readonly string user_id = "657762990";
-        private readonly string external_pos_id = "SUC001POS001";
+        public readonly string user_id = "657762990";
+        public readonly string external_pos_id = "SUC001POS001";
         private readonly string accessToken = "TEST-7091834242473976-082007-3f2848b83eb8c872aebc130399396854-657762990";
 
         public MercadoPagoService(HttpClient httpClient)
@@ -54,7 +54,11 @@ namespace FastFoodFIAP.Infra.MercadoPago
             ? new QrData()
             : JsonSerializer.Deserialize<QrData>(resultString);            
         }
-
-        public void Dispose() => _httpClient?.Dispose();
+        
+        public void Dispose()
+        {
+            _httpClient?.Dispose();
+            GC.SuppressFinalize(this);
+        }
     }
 }
