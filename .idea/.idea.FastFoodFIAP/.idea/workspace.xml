@@ -10,10 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31b71816-e25e-4960-9515-c2f2c29b7038" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago.Test/MercadoPagoServiceTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FastFoodFIAP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FastFoodFIAP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastFoodFIAP.sln" beforeDir="false" afterPath="$PROJECT_DIR$/FastFoodFIAP.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago/Models/Item.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FastFoodFIAP.Infra.CrossCutting.Bus.Test/FastFoodFIAP.Infra.CrossCutting.Bus.Test.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FastFoodFIAP.Infra.CrossCutting.Bus.Test/InMemoryBusTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Commands/PagamentoCommand/PagamentoCreateCommandHandlerTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Commands/PagamentoCommand/PagamentoCreateCommandTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Commands/PagamentoCommand/PagamentoUpdateCommandHandlerTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Commands/PagamentoCommand/PagamentoUpdateCommandTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Commands/Validations/PagamentoValidationsCreateTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Commands/Validations/PagamentoValidationsUpdateTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/FastFoodFIAP.Domain.Test.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Interfaces/IGatewayPagamentoTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Interfaces/IPagamentoRepositoryTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Interfaces/ISituacaoPagamentoRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Models/PagamentoTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Models/SituacaoPagamentoTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Usings.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +42,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="SWEA" />
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -42,6 +54,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.FastFoodFIAP.Services.Api: http.executor&quot;: &quot;Debug&quot;,
     &quot;5cc7249a-cf5f-4039-9ec4-f856cabaee74.executor&quot;: &quot;Debug&quot;,
     &quot;9878a2d9-dc80-4252-a9f8-50d8132745ed.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -52,7 +65,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.environmentSetup&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -130,7 +143,10 @@
       <workItem from="1706323592570" duration="210000" />
       <workItem from="1706359160587" duration="1410000" />
       <workItem from="1706360576522" duration="2255000" />
-      <workItem from="1706367398922" duration="1298000" />
+      <workItem from="1706367398922" duration="1720000" />
+      <workItem from="1706369431608" duration="539000" />
+      <workItem from="1706370179272" duration="166000" />
+      <workItem from="1706370348476" duration="118000" />
     </task>
     <servers />
   </component>
