@@ -47,7 +47,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-            .\.sonar\scanner\dotnet-sonarscanner begin /k:"grupo-7-fastfood-pos-soat-fiap_fastfood-pagamento" /o:"grupo-7-fastfood-pos-soat-fiap" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.dotcover.reportsPaths=dotCover.Output.html
+            .\.sonar\scanner\dotnet-sonarscanner begin /k:"grupo-7-fastfood-pos-soat-fiap_fastfood-pagamento" /o:"grupo-7-fastfood-pos-soat-fiap" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.dotcover.reportsPaths=dotCover.Output.html
             dotnet build
             dotnet dotcover test --dcReportType=HTML --dcOutput=dotCover.Output.html
-            .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+            .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
