@@ -10,7 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31b71816-e25e-4960-9515-c2f2c29b7038" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago.Test/MercadoPagoServiceTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FastFoodFIAP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FastFoodFIAP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FastFoodFIAP.sln" beforeDir="false" afterPath="$PROJECT_DIR$/FastFoodFIAP.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago/Models/Item.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +24,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago/Models/CashOut.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago/Models/Item.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago/Models/CashOut.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,29 +40,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "5cc7249a-cf5f-4039-9ec4-f856cabaee74.executor": "Debug",
-    "9878a2d9-dc80-4252-a9f8-50d8132745ed.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "add-test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;5cc7249a-cf5f-4039-9ec4-f856cabaee74.executor&quot;: &quot;Debug&quot;,
+    &quot;9878a2d9-dc80-4252-a9f8-50d8132745ed.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;add-test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/analuisabavati/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache",
-      "/Users/analuisabavati/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache",
-      "/Users/analuisabavati/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/analuisabavati/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/analuisabavati/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache&quot;,
+      &quot;/Users/analuisabavati/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.FastFoodFIAP.Services.Api: http">
     <configuration name="FastFoodFIAP.Domain.Test" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -127,6 +129,8 @@
       <workItem from="1706302353917" duration="10887000" />
       <workItem from="1706323592570" duration="210000" />
       <workItem from="1706359160587" duration="1410000" />
+      <workItem from="1706360576522" duration="2255000" />
+      <workItem from="1706367398922" duration="1298000" />
     </task>
     <servers />
   </component>
