@@ -10,21 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31b71816-e25e-4960-9515-c2f2c29b7038" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Commands/PagamentoCommand/PagamentoCreateCommandHandlerTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Commands/PagamentoCommand/PagamentoUpdateCommandTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastFoodFIAP.sln" beforeDir="false" afterPath="$PROJECT_DIR$/FastFoodFIAP.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FastFoodFIAP.Domain/Commands/PagamentoCommands/PagamentoCreateCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FastFoodFIAP.Domain/Commands/PagamentoCommands/PagamentoCreateCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FastFoodFIAP.Domain/Commands/PagamentoCommands/PagamentoCreateCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FastFoodFIAP.Domain/Commands/PagamentoCommands/PagamentoCreateCommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.CrossCutting.Bus/InMemoryBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.CrossCutting.Bus/InMemoryBus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.CrossCutting.IoC/NativeInjectorBootStrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.CrossCutting.IoC/NativeInjectorBootStrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.Data/FastFoodFIAP.Infra.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.Data/FastFoodFIAP.Infra.Data.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago/MercadoPagoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago/MercadoPagoService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago/Models/CashOut.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago/Models/CashOut.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago/Models/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago/Models/Item.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago/Models/QrData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago/Models/QrData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago/Models/Requisicao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago/Models/Requisicao.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FastFoodFIAP.Services.Api/Controllers/PagamentoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FastFoodFIAP.Services.Api/Controllers/PagamentoController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Commands/PagamentoCommand/PagamentoCreateCommandTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Commands/PagamentoCommand/PagamentoCreateCommandTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Commands/Validations/PagamentoValidationsCreateTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Commands/Validations/PagamentoValidationsUpdateTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FastFoodFIAP.Domain/Commands/PagamentoCommands/PagamentoCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FastFoodFIAP.Domain/Commands/PagamentoCommands/PagamentoCommand.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/FastFoodFIAP.Domain.Test.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/FastFoodFIAP.Domain.Test.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +123,7 @@
       <workItem from="1706216052422" duration="31000" />
       <workItem from="1706217747803" duration="5453000" />
       <workItem from="1706238189461" duration="4815000" />
-      <workItem from="1706302353917" duration="5325000" />
+      <workItem from="1706302353917" duration="10887000" />
     </task>
     <servers />
   </component>
@@ -159,19 +147,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Commands/PagamentoCommand/PagamentoCreateCommandHandlerTest.cs</url>
-          <line>27</line>
-          <properties documentPath="$PROJECT_DIR$/tests/FastFoodFIAP.Domain.Test/Commands/PagamentoCommand/PagamentoCreateCommandHandlerTest.cs" initialLine="24" containingFunctionPresentation="Method 'Handle_ValidCommand_ReturnsSuccessResult'">
-            <startOffsets>
-              <option value="1002" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1060" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/FastFoodFIAP.Domain/Commands/PagamentoCommands/PagamentoCreateCommandHandler.cs</url>
           <line>29</line>
