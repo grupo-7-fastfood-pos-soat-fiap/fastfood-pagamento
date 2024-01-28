@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E6AA95AD-658
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFoodPagamento.Domain", "src\FastFoodPagamento.Domain\FastFoodPagamento.Domain.csproj", "{32C590D5-5541-4374-8B6A-D2466BF2711D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFoodPagamento.Domain.Test", "src\FastFoodPagamento.Domain.Test\FastFoodPagamento.Domain.Test.csproj", "{8C8C3C98-261E-4231-B849-7191CA1990F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFoodPagamento.Domain.Test", "test\FastFoodPagamento.Domain.Test\FastFoodPagamento.Domain.Test.csproj", "{8C8C3C98-261E-4231-B849-7191CA1990F4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFoodPagamento.Infra.CrossCutting.IoC", "src\FastFoodPagamento.Infra.CrossCutting.IoC\FastFoodPagamento.Infra.CrossCutting.IoC.csproj", "{EF40227A-7DB6-4D0A-B153-2621C3A3F535}"
 EndProject
@@ -23,9 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFoodPagamento.Infra.Cro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFoodPagamento.Infra.MercadoPago", "src\FastFoodPagamento.Infra.MercadoPago\FastFoodPagamento.Infra.MercadoPago.csproj", "{633D5187-140A-4720-9455-414A2B272D26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFoodPagamento.Infra.MercadoPago.Test", "src\FastFoodPagamento.Infra.MercadoPago.Test\FastFoodPagamento.Infra.MercadoPago.Test.csproj", "{08F6C7F0-3DCF-4BD4-9FF3-8AA7D19CBCA4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFoodPagamento.Infra.MercadoPago.Test", "test\FastFoodPagamento.Infra.MercadoPago.Test\FastFoodPagamento.Infra.MercadoPago.Test.csproj", "{08F6C7F0-3DCF-4BD4-9FF3-8AA7D19CBCA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFoodPagamento.Application.Test", "src\FastFoodPagamento.Application.Test\FastFoodPagamento.Application.Test.csproj", "{3055BB69-22AC-487F-ACBF-DE9DD0705026}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFoodPagamento.Application.Test", "test\FastFoodPagamento.Application.Test\FastFoodPagamento.Application.Test.csproj", "{3055BB69-22AC-487F-ACBF-DE9DD0705026}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

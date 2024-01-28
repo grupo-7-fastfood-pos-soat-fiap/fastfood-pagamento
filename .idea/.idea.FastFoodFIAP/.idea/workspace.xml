@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31b71816-e25e-4960-9515-c2f2c29b7038" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FastFoodFIAP.Application.Test/AutoMapper/DomainToViewModelMappingProfileTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastFoodFIAP.sln" beforeDir="false" afterPath="$PROJECT_DIR$/FastFoodFIAP.sln" afterDir="false" />
-    </list>
+    <list default="true" id="31b71816-e25e-4960-9515-c2f2c29b7038" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +19,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/FastFoodFIAP.Infra.MercadoPago/Models/CashOut.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FastFoodPagamento.Infra.CrossCutting.IoC/bin/Debug/net6.0/FastFoodFIAP.Infra.CrossCutting.IoC.deps.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FastFoodPagamento.Infra.MercadoPago/Models/CashOut.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FastFoodPagamento.Services.Api/bin/Debug/net6.0/FastFoodFIAP.Services.Api.deps.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FastFoodPagamento.Services.Api/obj/Debug/net7.0/FastFoodFIAP.Services.Api.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -45,7 +45,7 @@
     "9878a2d9-dc80-4252-a9f8-50d8132745ed.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "add-testes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -82,7 +82,7 @@
       </method>
     </configuration>
     <configuration name="FastFoodFIAP.Services.Api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/FastFoodFIAP.Services.Api/FastFoodFIAP.Services.Api.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/FastFoodPagamento.Services.Api/FastFoodPagamento.Services.Api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
       <option name="LAUNCH_PROFILE_NAME" value="http" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -97,7 +97,7 @@
       </method>
     </configuration>
     <configuration name="FastFoodFIAP.Services.Api: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/FastFoodFIAP.Services.Api/FastFoodFIAP.Services.Api.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/FastFoodPagamento.Services.Api/FastFoodPagamento.Services.Api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
       <option name="LAUNCH_PROFILE_NAME" value="https" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -133,7 +133,7 @@
       <workItem from="1706369431608" duration="539000" />
       <workItem from="1706370179272" duration="166000" />
       <workItem from="1706370348476" duration="118000" />
-      <workItem from="1706404768941" duration="1080000" />
+      <workItem from="1706404768941" duration="5415000" />
     </task>
     <servers />
   </component>

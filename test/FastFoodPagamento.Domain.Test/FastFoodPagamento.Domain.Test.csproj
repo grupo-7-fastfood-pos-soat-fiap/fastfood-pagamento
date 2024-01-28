@@ -26,7 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FastFoodPagamento.Domain\FastFoodPagamento.Domain.csproj" />
+    <ProjectReference Include="..\..\src\FastFoodPagamento.Domain\FastFoodPagamento.Domain.csproj" />
+    <ProjectReference Include="..\src\FastFoodPagamento.Domain\FastFoodPagamento.Domain.csproj" />
   </ItemGroup>
 
 </Project>

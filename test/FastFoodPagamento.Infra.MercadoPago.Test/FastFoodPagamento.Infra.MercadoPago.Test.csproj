@@ -24,7 +24,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\FastFoodPagamento.Infra.MercadoPago\FastFoodPagamento.Infra.MercadoPago.csproj" />
+      <ProjectReference Include="..\..\src\FastFoodPagamento.Infra.MercadoPago\FastFoodPagamento.Infra.MercadoPago.csproj" />
+      <ProjectReference Include="..\src\FastFoodPagamento.Infra.MercadoPago\FastFoodPagamento.Infra.MercadoPago.csproj" />
     </ItemGroup>
 
 </Project>
