@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>FastFoodPagamento.Infra.CrossCutting.IoC</AssemblyName>
+    <RootNamespace>FastFoodPagamento.Infra.CrossCutting.IoC</RootNamespace>
+  </PropertyGroup>
+
+<ItemGroup>
+    <ProjectReference Include="..\FastFoodPagamento.Infra.MercadoPago\FastFoodPagamento.Infra.MercadoPago.csproj" />
+    <ProjectReference Include="..\FastFoodPagamento.Application\FastFoodPagamento.Application.csproj" />
+    <ProjectReference Include="..\FastFoodPagamento.Domain\FastFoodPagamento.Domain.csproj" />
+    <ProjectReference Include="..\FastFoodPagamento.Infra.Data\FastFoodPagamento.Infra.Data.csproj" />
+    <ProjectReference Include="..\GenericPack\GenericPack.csproj" />
+    <PackageReference Include="Dapper" Version="2.0.151" />
+
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />   
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+  </ItemGroup>
+
+<ItemGroup>
+  <ProjectReference Include="..\FastFoodPagamento.Infra.CrossCutting.Bus\FastFoodPagamento.Infra.CrossCutting.Bus.csproj" />
+</ItemGroup>
+</Project>
