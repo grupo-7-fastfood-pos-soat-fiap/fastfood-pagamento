@@ -17,6 +17,7 @@ O projeto consiste em um microservico responsável por gerar a cobrança de um p
 No projeto atual temos as seguintes funcionalidades:
 - Criar um pagamento
 - Consultar situação do pagamento
+- Webhook de confirmação ou recusa de um pagamento 
 
 ## Banco de dados
 Como o serviço de pagamento envolve transações financeiras, é crucial garantir a integridade e consistência dos dados, o sistema utiliza o banco de dados PostgreSQL.
