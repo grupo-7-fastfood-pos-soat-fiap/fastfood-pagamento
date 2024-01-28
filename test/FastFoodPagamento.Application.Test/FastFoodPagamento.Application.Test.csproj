@@ -27,7 +27,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\src\FastFoodPagamento.Application\FastFoodPagamento.Application.csproj" />
-      <ProjectReference Include="..\src\FastFoodPagamento.Application\FastFoodPagamento.Application.csproj" />
     </ItemGroup>
 
 </Project>
