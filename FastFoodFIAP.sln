@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E6AA95AD-658
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFoodFIAP.Domain", "src\FastFoodFIAP.Domain\FastFoodFIAP.Domain.csproj", "{32C590D5-5541-4374-8B6A-D2466BF2711D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFoodFIAP.Domain.Test", "tests\FastFoodFIAP.Domain.Test\FastFoodFIAP.Domain.Test.csproj", "{8C8C3C98-261E-4231-B849-7191CA1990F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFoodFIAP.Domain.Test", "src\FastFoodFIAP.Domain.Test\FastFoodFIAP.Domain.Test.csproj", "{8C8C3C98-261E-4231-B849-7191CA1990F4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFoodFIAP.Infra.CrossCutting.IoC", "src\FastFoodFIAP.Infra.CrossCutting.IoC\FastFoodFIAP.Infra.CrossCutting.IoC.csproj", "{EF40227A-7DB6-4D0A-B153-2621C3A3F535}"
 EndProject
@@ -24,8 +24,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFoodFIAP.Infra.MercadoPago", "src\FastFoodFIAP.Infra.MercadoPago\FastFoodFIAP.Infra.MercadoPago.csproj", "{633D5187-140A-4720-9455-414A2B272D26}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFoodFIAP.Infra.MercadoPago.Test", "src\FastFoodFIAP.Infra.MercadoPago.Test\FastFoodFIAP.Infra.MercadoPago.Test.csproj", "{08F6C7F0-3DCF-4BD4-9FF3-8AA7D19CBCA4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFoodFIAP.Infra.CrossCutting.Bus.Test", "FastFoodFIAP.Infra.CrossCutting.Bus.Test\FastFoodFIAP.Infra.CrossCutting.Bus.Test.csproj", "{79B53413-2806-4207-AF8C-678A1135634B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,10 +71,6 @@ Global
 		{08F6C7F0-3DCF-4BD4-9FF3-8AA7D19CBCA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08F6C7F0-3DCF-4BD4-9FF3-8AA7D19CBCA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08F6C7F0-3DCF-4BD4-9FF3-8AA7D19CBCA4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{79B53413-2806-4207-AF8C-678A1135634B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79B53413-2806-4207-AF8C-678A1135634B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79B53413-2806-4207-AF8C-678A1135634B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79B53413-2806-4207-AF8C-678A1135634B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,7 +84,6 @@ Global
 		{FD95EB19-6382-4E24-8966-916C6A653733} = {E6AA95AD-658B-454C-8253-B175F0E5B9D6}
 		{B44100F9-660D-44A5-A17B-D9F0584F39F2} = {E6AA95AD-658B-454C-8253-B175F0E5B9D6}
 		{633D5187-140A-4720-9455-414A2B272D26} = {E6AA95AD-658B-454C-8253-B175F0E5B9D6}
-		{79B53413-2806-4207-AF8C-678A1135634B} = {E6AA95AD-658B-454C-8253-B175F0E5B9D6}
 		{08F6C7F0-3DCF-4BD4-9FF3-8AA7D19CBCA4} = {E6AA95AD-658B-454C-8253-B175F0E5B9D6}
 		{8C8C3C98-261E-4231-B849-7191CA1990F4} = {E6AA95AD-658B-454C-8253-B175F0E5B9D6}
 	EndGlobalSection
