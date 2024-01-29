@@ -20,7 +20,7 @@ namespace FastFoodFIAP.Domain.Test.Commands.PagamentoCommand
                           .ReturnsAsync(new Pagamento(id, "QRCode123", 50.0m, Guid.NewGuid(), 1));
             repositoryMock.Setup(m => m.UnitOfWork).Returns(new Mock<IUnitOfWork>().Object);
             
-            var handler = new PagamentoUpdateCommandHandler(null, repositoryMock.Object);
+            var handler = new PagamentoUpdateCommandHandler(repositoryMock.Object);
             var command = new PagamentoUpdateCommand(id, situacaoId);
 
             // Act
@@ -44,7 +44,7 @@ namespace FastFoodFIAP.Domain.Test.Commands.PagamentoCommand
             repositoryMock.Setup(r => r.GetById(id))
                           .ReturnsAsync((Pagamento)null);
 
-            var handler = new PagamentoUpdateCommandHandler(null, repositoryMock.Object);
+            var handler = new PagamentoUpdateCommandHandler(repositoryMock.Object);
             var command = new PagamentoUpdateCommand(id, situacaoId);
 
             // Act

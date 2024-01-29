@@ -24,11 +24,6 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="GenericPack.FIAP.Grupo7.SOAP2.NET6" Version="1.0.0" />
-  </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\src\FastFoodPagamento.Domain\FastFoodPagamento.Domain.csproj" />
   </ItemGroup>

@@ -25,7 +25,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\src\FastFoodPagamento.Infra.MercadoPago\FastFoodPagamento.Infra.MercadoPago.csproj" />
-      <PackageReference Include="GenericPack.FIAP.Grupo7.SOAP2.NET6" Version="1.0.0" />
     </ItemGroup>
 
 </Project>

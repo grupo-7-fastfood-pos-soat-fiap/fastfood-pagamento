@@ -9,7 +9,7 @@ namespace FastFoodPagamento.Domain.Commands.PagamentoCommands
     {
         private readonly IPagamentoRepository _repository;
 
-        public PagamentoUpdateCommandHandler(IMediator mediator, IPagamentoRepository repository)
+        public PagamentoUpdateCommandHandler(IPagamentoRepository repository)
         {
             _repository = repository;
         }
