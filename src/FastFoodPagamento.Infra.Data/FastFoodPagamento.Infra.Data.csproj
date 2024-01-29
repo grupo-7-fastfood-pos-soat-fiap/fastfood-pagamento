@@ -2,7 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FastFoodPagamento.Domain\FastFoodPagamento.Domain.csproj" />
-    <ProjectReference Include="..\GenericPack\GenericPack.csproj" />
+    <PackageReference Include="GenericPack.FIAP.Grupo7.SOAP2.NET6" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>

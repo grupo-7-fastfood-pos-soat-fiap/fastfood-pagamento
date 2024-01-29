@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\GenericPack\GenericPack.csproj" />
     <PackageReference Include="MediatR" Version="12.0.1" />
+    <PackageReference Include="GenericPack.FIAP.Grupo7.SOAP2.NET6" Version="1.0.0" />
   </ItemGroup>
 
   <PropertyGroup>
