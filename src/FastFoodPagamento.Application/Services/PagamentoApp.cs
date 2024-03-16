@@ -3,6 +3,7 @@ using FastFoodPagamento.Application.InputModels;
 using FastFoodPagamento.Application.Interfaces;
 using FastFoodPagamento.Domain.Commands.PagamentoCommands;
 using FastFoodPagamento.Domain.Interfaces;
+using FastFoodPagamento.Infra.Data.Mensageria;
 using GenericPack.Mediator;
 using GenericPack.Messaging;
 
@@ -24,6 +25,10 @@ namespace FastFoodPagamento.Application.Services
         public async Task<CommandResult> Update(WebhookPagamentoInputModel model)
         {
             var command = _mapper.Map<PagamentoUpdateCommand>(model);
+            if (command.SituacaoId == 1)
+            {
+                await AndamentoMensageria.SendMessage("https://sqs.us-east-1.amazonaws.com/381491906285/pagamento-aprovado", command.PedidoId);
+            }
             return await _mediator.SendCommand(command);
         }
 
