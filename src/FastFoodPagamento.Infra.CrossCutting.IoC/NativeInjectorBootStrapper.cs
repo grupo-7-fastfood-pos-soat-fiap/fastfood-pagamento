@@ -6,6 +6,7 @@ using FastFoodPagamento.Application.Services;
 using FastFoodPagamento.Domain.Commands.PagamentoCommands;
 using FastFoodPagamento.Domain.Interfaces;
 using FastFoodPagamento.Domain.Interfaces.Services;
+using FastFoodPagamento.Domain.PagamentoEvent;
 using FastFoodPagamento.Infra.CrossCutting.Bus;
 using FastFoodPagamento.Infra.Data.Context;
 using FastFoodPagamento.Infra.Data.Repository;
@@ -53,6 +54,9 @@ namespace FastFoodPagamento.Infra.CrossCutting.IoC
             services.AddScoped<IRequestHandler<PagamentoCreateCommand, CommandResult>, PagamentoCreateCommandHandler>();
             services.AddScoped<IRequestHandler<PagamentoUpdateCommand, CommandResult>, PagamentoUpdateCommandHandler>();
 
+            // Domain Events
+            services.AddScoped<INotificationHandler<PagamentoCreateEvent>, PagamentoEventHandler>();
+            
             //Infra - Services
             services.AddScoped<IGatewayPagamento, MercadoPagoService>();
             

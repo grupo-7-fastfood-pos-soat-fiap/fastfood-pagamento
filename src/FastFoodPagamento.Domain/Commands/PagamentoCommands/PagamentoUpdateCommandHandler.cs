@@ -1,5 +1,6 @@
 ﻿using FastFoodPagamento.Domain.Interfaces;
 using FastFoodPagamento.Domain.Models;
+using FastFoodPagamento.Domain.PagamentoEvent;
 using GenericPack.Messaging;
 using MediatR;
 
@@ -28,6 +29,10 @@ namespace FastFoodPagamento.Domain.Commands.PagamentoCommands
             var pagamento = new Pagamento(request.Id, pagamentoExiste.QrCode, pagamentoExiste.Valor, pagamentoExiste.PedidoId, request.SituacaoId);
 
             _repository.Update(pagamento);
+            if (request.SituacaoId == 1) // pagamento aprovado 
+            {
+                pagamento.AddDomainEvent(new PagamentoCreateEvent(request.PedidoId));
+            }
 
             return await Commit(_repository.UnitOfWork);
         }
